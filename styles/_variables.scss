@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+// Colors
+
+$clr-primary-400: hsl(0, 100%, 67%);
+$clr-primary-200: hsl(39, 100%, 56%);
+$clr-secondary-400: hsl(166, 100%, 37%);
+$clr-secondary-200: hsl(234, 85%, 45%);
+
+$clr-gradient-bg-400: hsl(252, 100%, 67%);
+$clr-gradient-bg-700: hsl(241, 81%, 54%);
+
+$clr-gradient-cc-400: hsla(256, 72%, 46%, 1);
+$clr-gradient-cc-700: hsla(241, 72%, 46%, 0);
+
+$clr-neutral-100: hsl(0, 0%, 100%);
+$clr-neutral-400: hsl(221, 100%, 96%);
+$clr-neutral-500: hsl(241, 100%, 89%);
+$clr-neutral-700: hsl(224, 30%, 27%);
+
+// Font family
+$ff-default: "Hanken Grotesk", sans-serif;
+
+// Font weight
+$fw-regular: 500;
+$fw-bold: 700;
+$fw-extra-bold: 800;
+
+// Font size
+$fs-200: 1rem;
+$fs-400: 1.125rem;
+$fs-500: 1.25rem;

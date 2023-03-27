@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"); /*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+  height: 100%;
+}
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+main {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.card__sumarry--flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex--start {
+  align-self: flex-start;
+}
+
+.card--flex {
+  display: flex;
+  gap: 0.875rem;
+}
+
+.card--center {
+  text-align: center;
+}
+
+.card__summary .card__stats--red {
+  background-color: rgba(255, 87, 87, 0.1);
+}
+.card__summary .card__stats--yellow {
+  background-color: rgba(255, 176, 31, 0.1);
+}
+.card__summary .card__stats--green {
+  background-color: rgba(0, 189, 145, 0.1);
+}
+.card__summary .card__stats--blue {
+  background-color: rgba(17, 37, 212, 0.1);
+}
+.card__summary .text--red {
+  color: hsl(0, 100%, 67%);
+}
+.card__summary .text--yellow {
+  color: hsl(39, 100%, 56%);
+}
+.card__summary .text--green {
+  color: hsl(166, 100%, 37%);
+}
+.card__summary .text--blue {
+  color: hsl(234, 85%, 45%);
+}
+.card__summary .mg-2rem {
+  margin-bottom: 1.5rem !important;
+}
+
+.card {
+  display: grid;
+  max-width: 46rem;
+}
+
+.card_result {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 0 0 2rem 2rem;
+}
+.card_result .card__header-primary {
+  padding: 1rem 0;
+  color: rgba(235, 241, 255, 0.5);
+  font-size: 1rem;
+}
+.card_result .card__score {
+  font-size: 1rem;
+  color: rgba(235, 241, 255, 0.5);
+  background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  max-width: 8rem;
+  min-height: 8rem;
+  margin: 1rem auto;
+  border-radius: 1000px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.card_result .card__score--bold {
+  font-size: 3rem;
+  font-weight: 800;
+  display: inline-block;
+  color: hsl(221, 100%, 96%);
+}
+.card_result .card__score-header-secondary {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+.card_result .card__score-text {
+  font-size: 0.875rem;
+  color: rgba(235, 241, 255, 0.5);
+  padding: 0 3.6rem 3.2rem;
+}
+
+.card__summary {
+  padding: 1.5rem;
+}
+.card__summary .card--header-summary {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: hsl(224, 30%, 27%);
+  margin-bottom: 1.5rem;
+}
+.card__summary .card__stats {
+  padding: 1rem;
+  margin-bottom: 0.875rem;
+  border-radius: 1rem;
+}
+.card__summary .card__sumarry-text {
+  font-weight: 700;
+}
+.card__summary .card__numbers {
+  color: rgba(48, 59, 90, 0.5);
+  font-weight: 800;
+  margin-left: auto;
+}
+.card__summary .card__sumarry-text--bold {
+  color: hsl(224, 30%, 27%);
+  font-weight: 800;
+}
+.card__summary .button {
+  width: 100%;
+  background: hsl(224, 30%, 27%);
+  padding: 0.875rem;
+  border: none;
+  border-radius: 3rem;
+  color: hsl(0, 0%, 100%);
+  transition: all 3s;
+}
+.card__summary .button:hover,
+.card__summary .button:focus-visible {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+@media (min-width: 37.5em) {
+  .card {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 1rem;
+    box-shadow: 0 1rem 2rem 0 rgba(48, 59, 90, 0.1);
+    border-radius: 2rem;
+  }
+  .card .card_result {
+    border-radius: 2rem;
+  }
+  .card .card__header-primary {
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+  }
+  .card .card__score {
+    font-size: 1.25rem;
+    max-width: 12rem;
+    min-height: 12rem;
+  }
+  .card .card__score--bold {
+    font-size: 5rem;
+  }
+  .card .card__score-header-secondary {
+    font-size: 1.5rem;
+  }
+  .card .card__score-text {
+    font-size: 1rem;
+    padding: 0 4.4rem;
+  }
+}/*# sourceMappingURL=style.css.map */

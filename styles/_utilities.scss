@@ -1,0 +1,50 @@
+.card__sumarry--flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex--start {
+  align-self: flex-start;
+}
+
+.card--flex {
+  display: flex;
+  gap: 0.875rem;
+}
+
+.card--center {
+  text-align: center;
+}
+
+.card__summary {
+  .card__stats--red {
+    background-color: rgba($clr-primary-400, 0.1);
+  }
+
+  .card__stats--yellow {
+    background-color: rgba($clr-primary-200, 0.1);
+  }
+  .card__stats--green {
+    background-color: rgba($clr-secondary-400, 0.1);
+  }
+  .card__stats--blue {
+    background-color: rgba($clr-secondary-200, 0.1);
+  }
+
+  .text--red {
+    color: $clr-primary-400;
+  }
+  .text--yellow {
+    color: $clr-primary-200;
+  }
+  .text--green {
+    color: $clr-secondary-400;
+  }
+  .text--blue {
+    color: $clr-secondary-200;
+  }
+
+  .mg-2rem {
+    margin-bottom: 1.5rem !important;
+  }
+}

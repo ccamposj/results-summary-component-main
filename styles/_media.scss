@@ -1,0 +1,37 @@
+@media (min-width: 37.5em) {
+  .card {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 1rem;
+    box-shadow: 0 1rem 2rem 0 rgba($clr-neutral-700, 0.1);
+    border-radius: 2rem;
+
+    .card_result {
+      border-radius: 2rem;
+    }
+
+    .card__header-primary {
+      font-size: 1.25rem;
+      margin-top: 1.5rem;
+    }
+
+    .card__score {
+      font-size: 1.25rem;
+      max-width: 12rem;
+      min-height: 12rem;
+    }
+
+    .card__score--bold {
+      font-size: 5rem;
+    }
+
+    .card__score-header-secondary {
+      font-size: 1.5rem;
+    }
+
+    .card__score-text {
+      font-size: 1rem;
+      padding: 0 4.4rem;
+    }
+  }
+}
